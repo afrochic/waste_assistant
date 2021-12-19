@@ -64,10 +64,7 @@
             android:layout_alignBottom="@id/user_avatar"
             android:layout_marginTop="4dp"
             android:padding="10dp"
-            android:text=""
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            android:theme="@style/ThemeOverlay.AppCompat.Dark" />
-
+            android:text=""/>
         <TextView
             android:id="@+id/news"
             android:layout_width="wrap_content"

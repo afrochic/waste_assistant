@@ -4,10 +4,13 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
+import android.util.Pair;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
@@ -16,21 +19,22 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.viewpager.widget.PagerAdapter;
-import androidx.viewpager.widget.ViewPager;
 
 import com.bumptech.glide.Glide;
 import com.google.android.material.navigation.NavigationView;
-import com.google.android.material.tabs.TabLayout;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class Homepage extends AppCompatActivity {
     private DrawerLayout drawerLayout;
+    private UserRepo userRepo;
 
     @SuppressLint({"NonConstantResourceId", "QueryPermissionsNeeded"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homepage);
+
+        userRepo = new UserRepo(this);
 
         Toolbar toolbar = findViewById(R.id.tool_bar);
         drawerLayout = findViewById(R.id.drawer_layout);
@@ -44,7 +48,7 @@ public class Homepage extends AppCompatActivity {
 
         Glide.with(this).load(getIntent().getIntExtra("dImage", 0)).into(balutImage);
 
-    setSupportActionBar(toolbar);
+        setSupportActionBar(toolbar);
 
 
         final ActionBar actionBar = getSupportActionBar();
@@ -52,6 +56,19 @@ public class Homepage extends AppCompatActivity {
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setHomeAsUpIndicator(R.drawable.menu_foreground);
 
+        //Set username:
+        userRepo.getUser(new OnComplete() {
+            @Override
+            public void onComplete(Object o) {
+                User user = (User) o;
+                balutTitle.setText(user.username);
+            }
+
+            @Override
+            public void onFailure(String message) {
+                Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
+            }
+        });
 
         final PagerAdapter pagerAdapter = new PagerAdapter() {
             @Override

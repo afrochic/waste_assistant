@@ -30,13 +30,14 @@ public class login1 extends AppCompatActivity {
     Button btn_swipeRight;
     FirebaseAuth mAuth;
     TextView forgetpass;
-
+    AuthRepo authRepo;
 
     @SuppressLint({"WrongViewCast", "SetTextI18n"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login1);
+        authRepo = new AuthRepo(this);
         et_email = findViewById(R.id.et_email);
         et_password = findViewById(R.id.et_password);
         btn_login = findViewById(R.id.btn_login);

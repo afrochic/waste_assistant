@@ -5,11 +5,8 @@ import android.os.Bundle;
 import android.util.Patterns;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.google.firebase.auth.FirebaseAuth;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -20,12 +17,14 @@ public class MainActivity extends AppCompatActivity {
     EditText et_repasswords;
     Button btn_register;
     Button btn_swipeLeft;
-    FirebaseAuth mAuth;
+    AuthRepo auth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        auth = new AuthRepo(MainActivity.this);
 
         et_name = findViewById(R.id.et_name);
         et_email = findViewById(R.id.et_email);
@@ -34,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
         btn_register = findViewById(R.id.btn_register);
         btn_swipeLeft = findViewById(R.id.btn_swipeLeft);
 
-        mAuth = FirebaseAuth.getInstance();
         btn_register.setOnClickListener(v -> {
             String email = et_email.getText().toString().trim();
             String password = et_password.getText().toString().trim();
@@ -58,14 +56,8 @@ public class MainActivity extends AppCompatActivity {
                 et_password.requestFocus();
                 return;
             }
-            mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(task -> {
-                if (task.isSuccessful()) {
-                    //Toast.makeText(MainActivity.this, "You are successfully Registered", Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(MainActivity.this, Homepage.class));
-                } else {
-                    Toast.makeText(MainActivity.this, "You are not Registered! Try again", Toast.LENGTH_SHORT).show();
-                }
-            });
+
+            auth.register(et_name.getText().toString(), et_email.getText().toString(), et_password.getText().toString());
 
         });
         btn_swipeLeft.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, login1.class)));
