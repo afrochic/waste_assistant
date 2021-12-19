@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/waste_assistant2/app/src/main/res/drawable/btn.xml" value="0.1712820512820513" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/waste_assistant2/app/src/main/res/drawable/btn_text.xml" value="0.1712820512820513" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/waste_assistant2/app/src/main/res/drawable/gbackground.xml" value="0.1712820512820513" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/waste_assistant2/app/src/main/res/drawable/left_arrow.xml" value="0.1712820512820513" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/waste_assistant2/app/src/main/res/drawable/menu_foreground.xml" value="0.178125" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/waste_assistant2/app/src/main/res/drawable/right_arrow.xml" value="0.1712820512820513" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/waste_assistant2/app/src/main/res/layout/activity_client.xml" value="0.16197916666666667" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/waste_assistant2/app/src/main/res/layout/activity_homepage.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/waste_assistant2/app/src/main/res/layout/activity_login1.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/waste_assistant2/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/waste_assistant2/app/src/main/res/layout/activity_nav_header.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/waste_assistant2/app/src/main/res/layout/activity_reset_password.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/waste_assistant2/app/src/main/res/menu/drawer_menu.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/waste_assistant2/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/waste_assistant2/app/src/main/res/mipmap-anydpi-v26/menu.xml" value="0.178125" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/waste_assistant2/app/src/main/res/mipmap-anydpi-v26/menu_round.xml" value="0.178125" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/waste_assistant2/app/src/main/res/mipmap-anydpi-v26/user.xml" value="0.178125" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/waste_assistant2/app/src/main/res/mipmap-anydpi-v26/user_round.xml" value="0.178125" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

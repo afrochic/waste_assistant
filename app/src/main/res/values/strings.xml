@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Waste Assistant</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+    <string name="swipe_left_for_register">click here for Registration</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="e_mail">Email</string>
+    <string name="tag">Let us make waste management easier</string>
+    <string name="swipe_right_for_login">click here for Login</string>
+    <string name="register">Register</string>
+    <string name="re_type_password">Re-type Password</string>
+    <string name="your_name">Full Name</string>
+    <string name="title_activity_homepage">Homepage</string>
+    <string name="view_clients">view clients</string>
+    <string name="here_we_are">here we are</string>
+    <string name="user_name_text" />
+    <string name="email_address_text" />
+    <string name="drawer" />
+    <string name="communication">more ....</string>
+    <string name="contact_us">contact us</string>
+    <string name="about_us">about us</string>
+    <string name="share_app">share the app</string>
+    <string name="tab_label_1">clients</string>
+    <string name="signout">sign out</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+    <string name="to_reset_password_enter_your_email_press_the_button_and_check_mail_to_follow_instruction">To reset password, enter your email, press the button and check mail to follow instruction.</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="news" />
+    <!-- Strings used for fragments for navigation -->
+</resources>
