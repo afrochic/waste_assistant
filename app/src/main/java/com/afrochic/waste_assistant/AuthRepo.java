@@ -53,7 +53,7 @@ public class AuthRepo {
                 User user = snapshot.getValue(User.class);
                 if (user == null) {
                     Log.d("Auth", "user is null");
-                    ref.setValue(new User(username, email));
+                    ref.setValue(new User(username, email, null));
                     context.startActivity(new Intent(context, Homepage.class));
                 }
                 context.startActivity(new Intent(context, Homepage.class));

@@ -29,5 +29,8 @@
     <string name="to_reset_password_enter_your_email_press_the_button_and_check_mail_to_follow_instruction">To reset password, enter your email, press the button and check mail to follow instruction.</string>
     <string name="forget_password">Forget Password</string>
     <string name="news" />
+    <string name="default_notification_channel_id" translatable="false">waste_assistant_fcm_default_channel</string>
+    <string name="fcm_message">waste_assistant</string>>
+
     <!-- Strings used for fragments for navigation -->
 </resources>
