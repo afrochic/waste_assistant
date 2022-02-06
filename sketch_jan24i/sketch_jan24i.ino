@@ -1,10 +1,10 @@
 #include <ESP8266WiFi.h>
 #include <FirebaseArduino.h>
 
-#define FIREBASE_HOST "vaulted-scholar-284900-default-rtdb.firebaseio.com"
-#define FIREBASE_AUTH "HG8eu2PLzh0ZpfW3S0jaMLqLqxuF71DulTvg1d7W"
-#define WIFI_SSID "iPhone 7 Plus"
-#define WIFI_PASSWORD "ndinda1999"
+#define FIREBASE_HOST "DATABASE HOSTNAME"
+#define FIREBASE_AUTH "FIREBASE SECRET KEY"
+#define WIFI_SSID "YOUR WIFI NAME"
+#define WIFI_PASSWORD "WIFI PASSWORD"
 
 
 String values,sensor_data;
