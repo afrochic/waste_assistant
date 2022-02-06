@@ -1,42 +1,34 @@
 {
   "project_info": {
-    "project_number": "942299250171",
-    "firebase_url": "https://is-project-1be0a-default-rtdb.asia-southeast1.firebasedatabase.app",
-    "project_id": "is-project-1be0a",
-    "storage_bucket": "is-project-1be0a.appspot.com"
+    "project_number": "127490428661",
+    "firebase_url": "https://vaulted-scholar-284900-default-rtdb.firebaseio.com",
+    "project_id": "vaulted-scholar-284900",
+    "storage_bucket": "vaulted-scholar-284900.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:942299250171:android:69cb8661b592b8d2265f5e",
+        "mobilesdk_app_id": "1:127490428661:android:ef34aaf777151af8873fbc",
         "android_client_info": {
           "package_name": "com.afrochic.waste_assistant"
         }
       },
       "oauth_client": [
         {
-          "client_id": "942299250171-inge4438ojl2chf04r8n0g5el9197h3o.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.afrochic.waste_assistant",
-            "certificate_hash": "9a8e7ce9a0b006cb9b7074da6a1f3a1aa2f4ab2c"
-          }
-        },
-        {
-          "client_id": "942299250171-c647dljsqvggvkbfd4u8lm1687i01atd.apps.googleusercontent.com",
+          "client_id": "127490428661-gj3eouvdms65hbb5v4pcg7447llcnodb.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDWHWu6O0YMykMV99LoK1-2GF2bHNXiPsI"
+          "current_key": "AIzaSyBOf8n6nDYduYRbsAjpE06wmgTJnJSvoZw"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "942299250171-c647dljsqvggvkbfd4u8lm1687i01atd.apps.googleusercontent.com",
+              "client_id": "127490428661-gj3eouvdms65hbb5v4pcg7447llcnodb.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
